@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legado USA Edition | O Padrão Comercial Americano</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap');
+        :root { --navy: #0A1D37; --blue-accent: #1E40AF; }
+        body { font-family: 'Inter', sans-serif; background-color: #ffffff; }
+        h1, h2, h3 { font-family: 'Montserrat', sans-serif; }
+        .bg-navy { background-color: var(--navy); }
+        .text-navy { color: var(--navy); }
+        .sticky-header { position: sticky; top: 0; z-index: 50; box-shadow: 0 2px 15px rgba(0,0,0,0.05); }
+        .hero-gradient { background: linear-gradient(135deg, #0A1D37 0%, #112D4E 100%); position: relative; }
+        .hero-bg-custom { position: absolute; inset: 0; opacity: 0.15; pointer-events: none; background-image: url('fundo.jpg'); background-size: cover; background-position: center; }
+        .btn-cta { background: linear-gradient(to right, #1E40AF, #3B82F6); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .btn-cta:hover { transform: translateY(-2px); box-shadow: 0 10px 20px rgba(30, 64, 175, 0.3); filter: brightness(1.1); }
+        .card-border { border: 1px solid rgba(10, 29, 55, 0.08); transition: all 0.3s ease; }
+        .card-border:hover { border-color: var(--blue-accent); box-shadow: 0 20px 40px rgba(10, 29, 55, 0.05); }
+        .forbidden-list li::before { content: "✕"; color: #ef4444; font-weight: bold; margin-right: 10px; }
+        .success-list li::before { content: "✓"; color: #10b981; font-weight: bold; margin-right: 10px; }
+    </style>
+</head>
+<body class="text-slate-900 antialiased">
+
+    <nav class="sticky-header bg-white py-4 px-6 md:px-12 flex items-center justify-between">
+        <div class="flex items-center">
+            <img src="logo.png" alt="Legado Logo" id="nav-logo" class="h-8 md:h-10 object-contain hidden">
+            <div id="nav-fallback" class="font-black text-2xl tracking-tighter text-navy uppercase">
+                LEGADO<span class="text-blue-600">USA</span>
+            </div>
+        </div>
+        <div class="hidden md:flex items-center gap-8 text-sm font-bold uppercase tracking-widest text-navy">
+            <a href="#problem" class="hover:text-blue-600 transition-colors">O Problema</a>
+            <a href="#method" class="hover:text-blue-600 transition-colors">O Método</a>
+            <a href="#pricing" class="hover:text-blue-600 transition-colors">Investimento</a>
+        </div>
+        <a href="https://wa.me/5511992432882" target="_blank" class="btn-cta text-white px-6 py-3 rounded-full text-xs font-black uppercase tracking-widest">
+            Implementar Agora
+        </a>
+    </nav>
+
+    <header class="hero-gradient text-white py-24 md:py-32 px-6 overflow-hidden">
+        <div class="hero-bg-custom"></div>
+        <div class="relative z-10 max-w-6xl mx-auto text-center">
+            <span class="inline-block border border-blue-400/30 bg-blue-400/10 px-4 py-1 rounded-full text-[10px] font-bold uppercase tracking-[0.3em] mb-8 text-blue-300">
+                Exclusivo para Profissionais de Pisos nos EUA
+            </span>
+            <h1 class="text-5xl md:text-8xl font-black mb-8 leading-none tracking-tighter uppercase">
+                VENDA COMO UM <br> <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-200">GIGANTE AMERICANO</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-blue-100/80 mb-12 max-w-3xl mx-auto font-light leading-relaxed">
+                Mesmo sendo um empresário brasileiro. Domine o padrão comercial que conquista o respeito — e os cheques — do cliente americano.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                <a href="https://wa.me/5511992432882" target="_blank" class="btn-cta px-12 py-6 rounded-xl font-black text-lg shadow-2xl uppercase">
+                    QUERO O SISTEMA COMERCIAL
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-20 px-6 bg-slate-50 border-b border-slate-200">
+        <div class="max-w-4xl mx-auto">
+            <div class="bg-white p-10 md:p-16 rounded-[2.5rem] shadow-xl border border-blue-100 relative overflow-hidden">
+                <div class="absolute top-0 left-0 w-2 h-full bg-blue-600"></div>
+                <h2 class="text-xs font-black text-blue-600 uppercase tracking-[0.4em] mb-6">Informação Crítica</h2>
+                <h3 class="text-3xl font-extrabold text-navy mb-8">Este sistema foi desenvolvido exclusivamente para empresários brasileiros do setor de pisos e revestimentos que moram nos EUA e vendem para americanos.</h3>
+                
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <p class="font-bold text-red-600 uppercase text-xs tracking-widest mb-4">O que NÃO fazemos:</p>
+                        <ul class="forbidden-list space-y-3 font-medium text-slate-600">
+                            <li>Sem dependência de WhatsApp</li>
+                            <li>Sem conversas informais de venda</li>
+                            <li>Sem anúncios sem processo estruturado</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <p class="font-bold text-emerald-600 uppercase text-xs tracking-widest mb-4">O Padrão Americano:</p>
+                        <ul class="success-list space-y-3 font-medium text-slate-600">
+                            <li>Apenas Leads Qualificados</li>
+                            <li>Primeiro Contato Profissional via SMS</li>
+                            <li>Calls e Visitas Agendadas</li>
+                            <li>Fechamentos de Alto Ticket</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-12 pt-8 border-t border-slate-100 text-center">
+                    <p class="text-lg text-slate-500 italic">"Se você vende como uma lojinha brasileira local, atrai curiosos. Quando vende como uma empresa americana, atrai contratos."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="problem" class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row gap-16 items-center">
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl md:text-5xl font-black text-navy mb-8 uppercase leading-none">O Problema Real <br><span class="text-blue-600">no Mercado Americano</span></h2>
+                    <p class="text-slate-600 text-lg mb-8">Se você mora nos EUA, provavelmente vive isso: clientes pedem preço e somem, mensagens no WhatsApp ficam no 'visto', e sua agenda de visitas é uma montanha-russa.</p>
+                    
+                    <div class="grid grid-cols-1 gap-4">
+                        <div class="p-4 bg-slate-50 rounded-lg flex gap-4 items-center">
+                            <span class="w-10 h-10 flex items-center justify-center bg-navy text-white rounded-full font-bold">1</span>
+                            <span class="font-semibold">Leads não atendem ligações ou WhatsApp</span>
+                        </div>
+                        <div class="p-4 bg-slate-50 rounded-lg flex gap-4 items-center">
+                            <span class="w-10 h-10 flex items-center justify-center bg-navy text-white rounded-full font-bold">2</span>
+                            <span class="font-semibold">Agenda de visitas e faturamento instáveis</span>
+                        </div>
+                        <div class="p-4 bg-slate-50 rounded-lg flex gap-4 items-center">
+                            <span class="w-10 h-10 flex items-center justify-center bg-navy text-white rounded-full font-bold">3</span>
+                            <span class="font-semibold">Ausência de um processo profissional padrão EUA</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2 bg-navy rounded-3xl p-12 text-white shadow-2xl">
+                    <h4 class="text-blue-400 font-bold uppercase text-xs tracking-widest mb-6">Cheque de Realidade</h4>
+                    <p class="text-2xl font-light mb-8">"O problema não é falta de lead. É a ausência de um processo comercial profissional."</p>
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <i class="fas fa-times text-red-500"></i>
+                            <p class="line-through opacity-50">Vendas acontecem no WhatsApp</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <i class="fas fa-check text-emerald-500"></i>
+                            <p class="font-bold">Vendas acontecem em Calls ou Visitas</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <i class="fas fa-check text-emerald-500"></i>
+                            <p class="font-bold">SMS é o Canal Profissional</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-navy text-white">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-5xl font-black mb-16 uppercase italic">A Matemática das Vendas</h2>
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="p-10 card-border bg-white/5 rounded-2xl">
+                    <p class="text-blue-400 font-bold mb-4 uppercase text-xs">Poder de Fechamento</p>
+                    <p class="text-6xl font-black mb-4">+90%</p>
+                    <p class="text-slate-400 text-sm">Das vendas acontecem após uma call ou visita presencial.</p>
+                </div>
+                <div class="p-10 card-border bg-white/5 rounded-2xl">
+                    <p class="text-blue-400 font-bold mb-4 uppercase text-xs">Taxa de Visita</p>
+                    <p class="text-6xl font-black mb-4">3 a 5</p>
+                    <p class="text-slate-400 text-sm">Ligações qualificadas para garantir 1 visita no local.</p>
+                </div>
+                <div class="p-10 card-border bg-white/5 rounded-2xl">
+                    <p class="text-blue-400 font-bold mb-4 uppercase text-xs">Taxa de Contrato</p>
+                    <p class="text-6xl font-black mb-4">1 a 3</p>
+                    <p class="text-slate-400 text-sm">Visitas necessárias para fechar 1 contrato de alto ticket.</p>
+                </div>
+            </div>
+            <div class="bg-blue-600/10 border border-blue-500/30 p-10 rounded-3xl inline-block max-w-2xl">
+                <p class="text-xl md:text-2xl font-medium leading-relaxed">
+                    Nosso sistema existe para encher sua agenda com <span class="text-blue-400 font-bold">calls e visitas qualificadas</span>, trazendo a previsibilidade que seu faturamento merece.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="method" class="py-24 bg-white px-6">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl font-black text-navy text-center mb-20 uppercase">MÉTODO EUA LEGADO</h2>
+            <div class="grid md:grid-cols-5 gap-4">
+                <div class="group h-full p-8 card-border bg-slate-50 rounded-2xl hover:bg-navy hover:text-white transition-all duration-500">
+                    <span class="text-4xl font-black text-blue-600/30 mb-6 block">01</span>
+                    <h4 class="font-black uppercase mb-4 text-sm">Leads de Intenção</h4>
+                    <p class="text-[10px] opacity-70">Google e Meta Ads focados em quem já procura por pisos, filtrando curiosos.</p>
+                </div>
+                <div class="group h-full p-8 card-border bg-slate-50 rounded-2xl hover:bg-navy hover:text-white transition-all duration-500">
+                    <span class="text-4xl font-black text-blue-600/30 mb-6 block">02</span>
+                    <h4 class="font-black uppercase mb-4 text-sm">SMS Profissional</h4>
+                    <p class="text-[10px] opacity-70">Mensagens automáticas personalizadas. Sem WhatsApp. Autoridade instantânea e mais respostas.</p>
+                </div>
+                <div class="group h-full p-8 card-border bg-slate-50 rounded-2xl hover:bg-navy hover:text-white transition-all duration-500">
+                    <span class="text-4xl font-black text-blue-600/30 mb-6 block">03</span>
+                    <h4 class="font-black uppercase mb-4 text-sm">Triagem por IA</h4>
+                    <p class="text-[10px] opacity-70">O sistema coleta metragem, tipo de piso e prazo automaticamente antes do vendedor entrar.</p>
+                </div>
+                <div class="group h-full p-8 card-border bg-slate-50 rounded-2xl hover:bg-navy hover:text-white transition-all duration-500">
+                    <span class="text-4xl font-black text-blue-600/30 mb-6 block">04</span>
+                    <h4 class="font-black uppercase mb-4 text-sm">Agendamento Auto</h4>
+                    <p class="text-[10px] opacity-70">O sistema agenda a call ou visita. Seu vendedor só fala com quem já espera o contato.</p>
+                </div>
+                <div class="group h-full p-8 card-border bg-slate-50 rounded-2xl hover:bg-navy hover:text-white transition-all duration-500">
+                    <span class="text-4xl font-black text-blue-600/30 mb-6 block">05</span>
+                    <h4 class="font-black uppercase mb-4 text-sm">Follow-up via SMS</h4>
+                    <p class="text-[10px] opacity-70">Lembretes e recuperação de orçamentos automáticos. Persistente sem ser invasivo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-navy text-white overflow-hidden relative">
+        <div class="max-w-4xl mx-auto px-6 relative z-10">
+            <h2 class="text-4xl font-black mb-16 text-center">O QUE A LEGADO ENTREGA</h2>
+            <div class="grid md:grid-cols-2 gap-4">
+                <div class="p-6 bg-white/5 rounded-xl border border-white/10 flex items-start gap-4">
+                    <i class="fas fa-bullseye text-blue-400 mt-1"></i>
+                    <div><h5 class="font-bold mb-1">Tráfego de Alta Intenção</h5><p class="text-xs text-slate-400">Atraindo compradores reais de pisos — não curiosos.</p></div>
+                </div>
+                <div class="p-6 bg-white/5 rounded-xl border border-white/10 flex items-start gap-4">
+                    <i class="fas fa-sms text-blue-400 mt-1"></i>
+                    <div><h5 class="font-bold mb-1">Automação de SMS</h5><p class="text-xs text-slate-400">Contato profissional imediato via mensagem de texto. Padrão EUA.</p></div>
+                </div>
+                <div class="p-6 bg-white/5 rounded-xl border border-white/10 flex items-start gap-4">
+                    <i class="fas fa-robot text-blue-400 mt-1"></i>
+                    <div><h5 class="font-bold mb-1">Agente de Triagem com IA</h5><p class="text-xs text-slate-400">Primeiro contato e qualificação feitos automaticamente.</p></div>
+                </div>
+                <div class="p-6 bg-white/5 rounded-xl border border-white/10 flex items-start gap-4">
+                    <i class="fas fa-tasks text-blue-400 mt-1"></i>
+                    <div><h5 class="font-bold mb-1">CRM de Vendas Organizado</h5><p class="text-xs text-slate-400">Visibilidade total: Lead, Call, Visita, Proposta, Fechamento.</p></div>
+                </div>
+                <div class="p-6 bg-blue-600 rounded-xl md:col-span-2 flex items-center justify-center gap-4 text-center">
+                    <i class="fas fa-users"></i>
+                    <p class="font-black uppercase tracking-widest text-sm">Suporte em Grupo & Otimização Contínua</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="py-32 px-6 bg-white text-center">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-4xl md:text-6xl font-black text-navy mb-12 uppercase tracking-tighter">VENDENDO COMO UMA <br><span class="text-blue-600">EMPRESA AMERICANA</span></h2>
+            <div class="bg-slate-50 border border-slate-200 p-12 md:p-20 rounded-[3rem] shadow-2xl relative">
+                <div class="bg-navy text-white text-[10px] font-black px-6 py-2 rounded-full absolute -top-4 left-1/2 -translate-x-1/2 uppercase tracking-widest">Investimento de Implementação</div>
+                <div class="flex items-center justify-center gap-3 mb-8">
+                    <span class="text-2xl font-bold text-slate-400 italic">US$</span>
+                    <span class="text-9xl font-black text-navy tracking-tighter">800</span>
+                </div>
+                <p class="text-slate-500 mb-10 text-lg">Sem promessas vazias. Sem dependência de WhatsApp. Foco total em vendas reais.</p>
+                <a href="https://wa.me/5511992432882" target="_blank" class="block w-full py-6 btn-cta text-white font-black text-xl rounded-2xl shadow-xl uppercase">IMPLEMENTAR O SISTEMA AGORA</a>
+            </div>
+            <div class="mt-20">
+                <p class="text-xs font-black text-slate-300 uppercase tracking-[0.5em] mb-4">Quem Somos</p>
+                <p class="text-slate-500 max-w-2xl mx-auto text-sm leading-relaxed">
+                    A Legado Performance Digital é uma aceleradora comercial fundada em 2020 por Leonardo Chagas. Com mais de 400 empresas atendidas, somos especialistas no segmento de pisos desde 2023, aplicando metodologia validada no mercado americano.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 bg-slate-50 border-t border-slate-200 px-6 text-center">
+        <div class="mb-6 flex flex-col items-center">
+            <img src="logo.png" alt="Legado Logo" id="footer-logo" class="h-8 mb-4 object-contain hidden">
+            <div id="footer-fallback" class="font-black text-xl tracking-tighter text-navy uppercase">
+                LEGADO<span class="text-blue-600">USA</span>
+            </div>
+        </div>
+        
+        <div class="mb-8">
+            <a href="index.html" class="inline-flex items-center gap-2 px-4 py-2 border border-slate-300 rounded-lg text-xs font-bold text-slate-600 hover:bg-slate-100 transition-colors uppercase tracking-widest">
+                <i class="fas fa-globe"></i> Change to English (US)
+            </a>
+        </div>
+
+        <p class="text-slate-400 text-[10px] uppercase tracking-widest">
+            FOCO EM VENDAS, NÃO EM CLIQUES. &copy; 2025 TODOS OS DIREITOS RESERVADOS.
+        </p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    e.preventDefault();
+                    document.querySelector(href).scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        function handleLogoVisibility(logoId, fallbackId) {
+            const img = document.getElementById(logoId);
+            const fallback = document.getElementById(fallbackId);
+            
+            const tempImg = new Image();
+            tempImg.src = img.src;
+            tempImg.onload = function() {
+                img.classList.remove('hidden');
+                fallback.classList.add('hidden');
+            };
+            tempImg.onerror = function() {
+                img.classList.add('hidden');
+                fallback.classList.remove('hidden');
+            };
+        }
+
+        window.onload = function() {
+            handleLogoVisibility('nav-logo', 'nav-fallback');
+            handleLogoVisibility('footer-logo', 'footer-fallback');
+        };
+    </script>
+</body>
+</html>
